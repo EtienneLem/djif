@@ -1,6 +1,6 @@
 {
   "name": "hubot-djif",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Post a random GIF with  #djif <search>",
   "author": "Etienne Lemay <etienne@heliom.ca>",
   "repository": {
@@ -11,7 +11,7 @@
   "bugs": { "url": "https://github.com/EtienneLem/djif/issues" },
   "license": "MIT",
   "keywords": ["hubot", "hipchat", "djif", "gif", "giphy"],
-  "main": "hubot.coffee",
+  "main": "index.coffee",
   "dependencies": {
     "hubot": ">= 2.4.0"
   },

@@ -17,12 +17,12 @@ Add [hubot-djif](https://www.npmjs.org/package/hubot-djif) to your Hubot `packag
 "dependencies": {
   "hubot":         ">= 2.6.0 < 3.0.0",
   "hubot-scripts": ">= 2.5.0 < 3.0.0",
-  "hubot-djif":    "0.1.0"
+  "hubot-djif":    "0.1.1"
 }
 …
 ```
 
-Then add `['hubot-djif']` to your `external-scripts.json` file.<br>
+Then add `["hubot-djif"]` to your `external-scripts.json` file.<br>
 Restart/deploy Hubot. He will be listening to `#djif <search>`.
 
 ## Development
