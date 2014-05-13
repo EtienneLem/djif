@@ -1,0 +1,21 @@
+{
+  "name": "hubot-djif",
+  "version": "0.1.0",
+  "description": "Post a random GIF with  #djif <search>",
+  "author": "Etienne Lemay <etienne@heliom.ca>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EtienneLem/djif.git"
+  },
+  "homepage": "https://github.com/EtienneLem/djif",
+  "bugs": { "url": "https://github.com/EtienneLem/djif/issues" },
+  "license": "MIT",
+  "keywords": ["hubot", "hipchat", "djif", "gif", "giphy"],
+  "main": "hubot.coffee",
+  "dependencies": {
+    "hubot": ">= 2.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
