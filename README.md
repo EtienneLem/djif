@@ -19,7 +19,7 @@ Add [hubot-djif](https://www.npmjs.org/package/hubot-djif) to your Hubot `packag
 "dependencies": {
   "hubot":         ">= 2.6.0 < 3.0.0",
   "hubot-scripts": ">= 2.5.0 < 3.0.0",
-  "hubot-djif":    "0.1.1"
+  "hubot-djif":    "0.1.2"
 }
 …
 ```
