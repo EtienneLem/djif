@@ -1,4 +1,4 @@
-# Djif — Not pronounced Gif
+# Djif
 Posts GIF with `#djif <search>` in your Slack channels and HipChat rooms.<br>
 It was, at first, a port of [Bold](https://twitter.com/bold)’s [GifBot](https://github.com/bold/GifBot). Give them a shout-out!
 
