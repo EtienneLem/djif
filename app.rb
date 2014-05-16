@@ -15,7 +15,7 @@ class Djif < Sinatra::Base
     search = params[:text].split(trigger)[1]
     gif_url = get_gif_url(search)
 
-    { text: gif_url }.to_json
+    json_for(gif_url, search)
   end
 
   post '/hipchat' do
@@ -24,7 +24,12 @@ class Djif < Sinatra::Base
     search = params[:search]
     gif_url = get_gif_url(search)
 
-    { text: gif_url }.to_json
+    json_for(gif_url, search)
+  end
+
+  def json_for(gif_url, search)
+    text = gif_url || "No Gif found for “#{search.strip}”"
+    { text: text }.to_json
   end
 
   def get_gif_url(search = '')
@@ -37,6 +42,7 @@ class Djif < Sinatra::Base
     response = HTTParty.get("http://api.giphy.com/v1/gifs/random?api_key=#{ENV['GIPHY_API_KEY']}&tag=#{search}")
     gif = response['data']
 
+    return nil unless gif.any?
     gif['image_original_url']
   end
 end
