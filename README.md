@@ -7,8 +7,9 @@ Add [hubot-djif](https://www.npmjs.org/package/hubot-djif) to your Hubot `packag
 ```json
 …
 "dependencies": {
-  "hubot":         ">= 2.6.0 < 3.0.0",
-  "hubot-scripts": ">= 2.5.0 < 3.0.0",
+  "hubot":         "2.7.3",
+  "hubot-scripts": "2.5.13",
+  "hubot-hipchat": "2.6.4",
   "hubot-djif":    "0.1.2"
 }
 …
