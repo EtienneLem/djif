@@ -39,10 +39,11 @@ class Djif < Sinatra::Base
     limit = 25
     offset = 0
 
-    response = HTTParty.get("http://api.giphy.com/v1/gifs/random?api_key=#{ENV['GIPHY_API_KEY']}&tag=#{search}")
-    gif = response['data']
+    response = HTTParty.get("http://api.giphy.com/v1/gifs/search?api_key=#{ENV['GIPHY_API_KEY']}&q=#{search}&limit=#{limit}&offset=#{offset}")
+    gifs = response['data']
+    return nil unless gifs.any?
 
-    return nil unless gif && gif.any?
-    gif['image_original_url']
+    gif = gifs.sample
+    gif['images']['original']['url']
   end
 end
