@@ -42,7 +42,7 @@ class Djif < Sinatra::Base
     response = HTTParty.get("http://api.giphy.com/v1/gifs/random?api_key=#{ENV['GIPHY_API_KEY']}&tag=#{search}")
     gif = response['data']
 
-    return nil unless gif.any?
+    return nil unless gif && gif.any?
     gif['image_original_url']
   end
 end
